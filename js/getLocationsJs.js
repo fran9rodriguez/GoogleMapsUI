@@ -4,7 +4,8 @@
     var gLongitude = document.getElementById("txtLongitude").value;
     var maxDistance = document.getElementById("maxDistance").value;
     var maxResults = document.getElementById("maxResults").value;
-    var sUrl = 'http://localhost:63577/SearchService.svc/GetLocations/' + gLatitude + '/' + gLongitude + '/' + maxDistance + '/' + maxResults;
+    var sEndPoint = document.getElementById("endPoint").value; 
+    var sUrl = sEndPoint + '/SearchService.svc/GetLocations/' + gLatitude + '/' + gLongitude + '/' + maxDistance + '/' + maxResults;
     console.log(sUrl);
 
     jQuery.ajax({
