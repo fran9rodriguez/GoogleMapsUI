@@ -42,7 +42,10 @@
                 })(marker, i));
             }
 
-            document.getElementById("rDuration").value = data["Duration"];
+            
+            document.getElementById("fileRecords").value = data["FileRecords"];
+            document.getElementById("rDuration").value = data["TotalDuration"];
+            document.getElementById("fileDuration").value = data["ReadDataDuration"];            
             document.getElementById("rLatitude").value = data["Latitude"];
             document.getElementById("rLongitude").value = data["Longitude"];
             document.getElementById("rDistance").value = data["Distance"];
